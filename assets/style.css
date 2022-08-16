@@ -1,0 +1,18 @@
+* {
+    font-family: sans-serif;
+    font-size: 40px;
+};
+body {
+    background-color:rgb(107, 102, 102)
+};
+
+#navButtons {
+    list-style: none;
+};
+
+.button.primary.mystyles {
+    background-color: darkred;
+    font-size: 20px;
+    border-radius: 5%;
+    display: inline-flex;
+};
