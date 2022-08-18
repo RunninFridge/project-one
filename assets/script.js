@@ -1,8 +1,10 @@
+es (94 sloc)  3.14 KB
+
 var youTubeBtn = document.getElementById("youTubeBtn");
 var appleMusicBtn = document.getElementById("appleMusicBtn");
 var spotifyBtn = document.getElementById("spotifyBtn");
-var Genius = require("genius-lyrics"); // for genius ?
-var client = new client("BOV6yaftuJuARA2ojkIunAabxrVWK-DmjLWuT5JHjy0UYAnqon9Cku0dY4E1YM0B"); //for genius ??
+
+
 
 //lets you open links in new tabs onclick - vm
 youTubeBtn.onclick = function() {
@@ -19,16 +21,92 @@ spotifyBtn.onclick = function() {
 
 
 
-var searches = client.songs.search("");
+function getApi() {
+    var requestURL = 'https://api.musixmatch.com/ws/1.1/?&apikey=QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr'
 
-// fetching songs from genius -vm
-var firstSong = searches[0];
-console.log("About the Song:\n", firstSong, "\n");
+fetch(requestURL)
+    .then(function (response){
+        return response.json();
+    })
+    .then(function (data){
+        console.log(data)
+    })
+}
 
-// fetching lyrics from genius -vm
-var lyrics = firstSong.lyrics();
-console.log("Lyrics of the Song:\n", lyrics, "\n");
 
-// fetching an artist from genius -vm
-var artist = client.artists.get();
-console.log("About the Artist:\n", artist, "\n");
+
+function searchLyrics() {
+    var artistSearch = document.getElementById("artistSearch").value;
+    document.getElementById("lyrics").textContent = "";
+    $.ajax({
+      type: "GET",
+      data: {
+        apikey: "QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr",
+        q_artist: artistSearch,
+        format: "json",
+        callback: "json_callback"
+      },
+      url: "https://api.musixmatch.com/ws/1.1/track.search",
+      dataType: "json",
+      jsonCallback: "json_callback",
+      contentType: "application/json",
+      success: function (data) {
+        console.log(data);
+        console.log(data.message.body.track_list[0].track.album_coverart_350x350);
+        console.log(data.message.body.track_list[0].track.lyrics_id);
+        var random = data.message.body.track_list[
+            Math.floor(Math.random() * data.message.body.track_list.length)
+          ];
+        console.log(random.track.track_id);
+        var thisTrack = random.track.track_id;
+  
+        var p = document.createElement("p");
+        p.textContent = thisTrack;
+        p.id = thisTrack;
+  
+        document.getElementById("lyrics").appendChild(p).style.opacity = 0;
+        document.getElementById("ghost").click();
+      },
+      error: function (jqXHR, textStatus, errorTh) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorTh);
+      }
+    });
+  }
+  
+  function getLyricsNow() {
+    var trackId = document.getElementById("lyrics").textContent;
+    console.log(trackId);
+    $.ajax({
+      type: "GET",
+      data: {
+        apikey: "QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr",
+        track_id: trackId,
+        format: "json",
+        callback: "json_callback"
+      },
+      url: "https://api.musixmatch.com/ws/1.1/track.lyrics.get",
+      dataType: "json",
+      jsonCallback: "json_callback",
+      contentType: "application/json",
+      success: function (data) {
+        console.log(data);
+        console.log(data.message.body.lyrics.lyrics_body);
+        var lyricsBody =
+          data.message.body.lyrics.lyrics_body
+            .split(/\s+/)
+            .slice(0, 100)
+            .join(" ") + "...";
+  
+        var j = document.createElement("p");
+        j.textContent = lyricsBody;
+        document.getElementById("lyrics").appendChild(j);
+      },
+      error: function (jqXHR, textStatus, errorTh) {
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorTh);
+      }
+    });
+  }
