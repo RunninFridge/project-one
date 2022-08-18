@@ -17,4 +17,14 @@ spotifyBtn.onclick = function() {
     window.open('https://open.spotify.com/');
 };
 
-https://api.musixmatch.com/ws/1.1/......?&apikey=QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr
+function getApi() {
+    var requestURL = 'https://api.musixmatch.com/ws/1.1/?&apikey=QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr'
+
+fetch(requestURL)
+    .then(function (response){
+        return response.json();
+    })
+    .then(function (data){
+        console.log(data)
+    })
+}
