@@ -17,6 +17,8 @@ spotifyBtn.onclick = function() {
     window.open('https://open.spotify.com/');
 };
 
+
+
 function getApi() {
     var requestURL = 'https://api.musixmatch.com/ws/1.1/?&apikey=QTbUwuc4VmQH4fCYBn2UmCYq0CzG9SG8O2VNVfvr'
 
@@ -31,7 +33,7 @@ fetch(requestURL)
 
 
 
-function getLyrics() {
+function searchLyrics() {
     var artistSearch = document.getElementById("artistSearch").value;
     document.getElementById("lyrics").textContent = "";
     $.ajax({
@@ -50,14 +52,11 @@ function getLyrics() {
         console.log(data);
         console.log(data.message.body.track_list[0].track.album_coverart_350x350);
         console.log(data.message.body.track_list[0].track.lyrics_id);
-        var rand =
-          data.message.body.track_list[
+        var random = data.message.body.track_list[
             Math.floor(Math.random() * data.message.body.track_list.length)
           ];
-        console.log(rand.track.track_id);
-        var thisTrack = rand.track.track_id;
-        var thisPic = rand.track.album_coverart_350x350;
-        console.log(thisPic);
+        console.log(random.track.track_id);
+        var thisTrack = random.track.track_id;
   
         var p = document.createElement("p");
         p.textContent = thisTrack;
