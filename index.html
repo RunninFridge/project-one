@@ -5,62 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music project</title>
+    <title>Music Search Engine</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
     <link rel="StyleSheet" href="./assets/style.css"/>
 </head>
 <body>
-    <nav>
-<div class="container"> <!-- Enveloped whole page in a container to be able to manipulate better --vm -->
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <ul id="navButtons">
-            <li class="menu-text">Music Project</li>
-            <li>
-                <button class="button primary mystyles" id="youTubeBtn" type="button" href="https://www.youtube.com/">YouTube</button>
-            </li>
-            <li>
-                <button class="button primary mystyles" id="appleMusicBtn" type="button"href="https://music.apple.com/us/browse">Apple Music</button>
-            </li>
-            <li>
-                <button class="button primary mystyles" id="spotifyBtn" type="button" href="https://open.spotify.com/">Spotify</button>
-            </li>
-          </ul>
-        </div>
-    </div>    
-    </nav>
-        </section>
-    </div>
-    <!-- Possibly coming from bootsrap library, need to look for it in Foundatioin (Bootstrap Utilities Module 5-16): SN-->
-    <div>
-        <div class="col-12 col-sm-6 col-lg-4 mb-3">
-    <!-- Limit search result to 5 SN-->
-            <div form="Search Bar">
-        </div>
-        <div>
-    <!--List that retrurns search result SN-->         
-    </div>
-    <div>
-    <!-- Image of Album Cover div from API to embed SN--> 
-    <!-- Play button interface nested insdie "album cover" div SN"-->
-    <div>
-        <ul>
-    <!-- List items append local storage items from search bar SN-->        
-            <li>"Search 1"</li>
-            <li>"Search 2"</li>
-            <li>"Search 3"</li>
-            <li>"Search 4"</li>
-            <li>"Search 5"</li>
-            <li>"Search 6"</li> 
-        </ul>
-    </div>
-    </div>
-        <button type="button"></button>
-    </div>
-</div>
-</div>
+    <section class="header">
+        <nav>
+            <h1>Music Search Engine</h1>
+            <button class="button primary mystyles" id="youTubeBtn" type="button" href="https://www.youtube.com/">YouTube</button>
+            <iconify-icon icon="logos:youtube"></iconify-icon>
+            <button class="button primary mystyles" id="appleMusicBtn" type="button"href="https://music.apple.com/us/browse">Apple Music</button>
+            <iconify-icon icon="cib:apple-music"></iconify-icon>
+            <button class="button primary mystyles" id="spotifyBtn" type="button" href="https://open.spotify.com/">Spotify</button>
+            <iconify-icon icon="logos:spotify-icon"></iconify-icon>
+           
+        </nav>
+    </section> 
+    <p class= "bio">Search for any song lyric and get the song title in return.</p>   
+    <section>
+        <div class ="container">
+            <input type="text" class="searchBar" placeholder="Search..." >
+            <button class="button primary" id="searchBtn" type="button">Search</button>
+        </div>   
+        <div class="card" style="width: 33%;">
+            <div class="card-divider">
+              Search Results
+            </div>
+            <div class="card-section">
+                <p class="details">You can find your music library below:</p>
+              <!-- List items append local storage items from search bar SN--> 
+            <ol class="searchResults">      
+                <li>"Search 1"</li>
+                <li>"Search 2"</li>
+                <li>"Search 3"</li>
+                <li>"Search 4"</li>
+                <li>"Search 5"</li> 
+            </ol>
+            </div>
+    </section>    
 
-
+    <section class="footer">  
+    <hr id="endBreak">
+        &copy; UW Coding Bootcamp Project 1: Alfredo Rodriguez | Vadim Merenovskiy | Stephen Novelli | 2022
+    </section>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="./assets/script.js"></script>
     <script src="https://genius.codes"></script>
 </body>
