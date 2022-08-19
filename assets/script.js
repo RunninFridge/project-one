@@ -1,4 +1,4 @@
-var youTubeBtn = document.getElementById("youTube-btn");
+var youTubeBtn = document.getElementById("youtube-btn");
 var appleMusicBtn = document.getElementById("apple-music-btn");
 var spotifyBtn = document.getElementById("spotify-btn");
 
