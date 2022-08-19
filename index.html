@@ -14,20 +14,17 @@
     <section class="header">
         <nav>
             <h1>Music Search Engine</h1>
-            <button class="button primary mystyles" id="youTubeBtn" type="button" href="https://www.youtube.com/">YouTube</button>
-            <iconify-icon icon="logos:youtube"></iconify-icon>
-            <button class="button primary mystyles" id="appleMusicBtn" type="button"href="https://music.apple.com/us/browse">Apple Music</button>
-            <iconify-icon icon="cib:apple-music"></iconify-icon>
-            <button class="button primary mystyles" id="spotifyBtn" type="button" href="https://open.spotify.com/">Spotify</button>
-            <iconify-icon icon="logos:spotify-icon"></iconify-icon>
-           
+            <button><iconify-icon icon="logos:youtube" class="button-styles" id="youtube-btn" type="button" href="https://www.youtube.com/"></iconify-icon></iconify-icon></button>
+            <button><iconify-icon icon="cib:apple-music" class="button-styles" id="apple-music-btn" type="button"href="https://music.apple.com/us/browse"></iconify-icon></iconify-icon></button>
+            <button><iconify-icon icon="logos:spotify-icon" class="button-styles" id="spotify-btn" type="button" href="https://open.spotify.com/"></iconify-icon></button>
+            
         </nav>
     </section> 
     <p class= "bio">Search for any song lyric and get the song title in return.</p>   
     <section>
         <div class ="container">
-            <input type="text" class="searchBar" placeholder="Search..." >
-            <button class="button primary" id="searchBtn" type="button">Search</button>
+            <input type="text" class="search-bar" placeholder="Search..." >
+            <button class="button primary" id="search-btn" type="button">Search</button>
         </div>   
         <div class="card" style="width: 33%;">
             <div class="card-divider">
@@ -36,7 +33,7 @@
             <div class="card-section">
                 <p class="details">You can find your music library below:</p>
               <!-- List items append local storage items from search bar SN--> 
-            <ol class="searchResults">      
+            <ol class="search-results">      
                 <li>"Search 1"</li>
                 <li>"Search 2"</li>
                 <li>"Search 3"</li>
@@ -47,11 +44,10 @@
     </section>    
 
     <section class="footer">  
-    <hr id="endBreak">
+    <hr>
         &copy; UW Coding Bootcamp Project 1: Alfredo Rodriguez | Vadim Merenovskiy | Stephen Novelli | 2022
     </section>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
     <script src="./assets/script.js"></script>
-    <script src="https://genius.codes"></script>
 </body>
 </html>

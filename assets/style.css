@@ -24,14 +24,8 @@ h1 {
     float: left;
 }  
 
-.button.primary.mystyles {
-    background-color: darkred;
-    font-size: 20px;
-    border-radius: 5%;
-    float: right;
-    margin-right: 7px;
-    border: solid;
-    border-width: 3px;
+.button-styles {
+    size: 20px;
 }
 
 .button.primary.mystyles:hover {
@@ -59,7 +53,7 @@ p.bio {
     display: flex;
 }
 
-.searchBar {
+.search-bar {
     width: 20%;
     border: black;
     border: solid;
@@ -69,7 +63,7 @@ p.bio {
     margin-bottom: 8%;
 }
 
-#searchBtn {
+#search-btn {
     background-color: darkred;
     font-size: 18px;
     border-radius: 5%;
@@ -80,7 +74,7 @@ p.bio {
     margin-bottom: 8%;
 }
 
-#searchBtn:hover {
+#search-btn:hover {
     opacity: 0.7;
 }   
     
@@ -105,7 +99,7 @@ p.details {
     font-style: italic;
 }
 
-.searchResults {
+.search-results {
     font-size: 22px;
     margin-left: 10%;
     color: white;
