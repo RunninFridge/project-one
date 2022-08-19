@@ -1,6 +1,7 @@
 var youTubeBtn = document.getElementById("youtube-btn");
 var appleMusicBtn = document.getElementById("apple-music-btn");
 var spotifyBtn = document.getElementById("spotify-btn");
+var
 
 
 
@@ -24,10 +25,13 @@ $('#search-btn').on('click', function(event){
 , function(data) {  
     console.log(data);
 
-    var tracklist = data.message.body.track_list;
-        for (var i = 0; i < tracklist.length; i++) {
-        console.log(tracklist[i].track.track_name)
-}
-    });
+    ar tracklist = data.message.body.track_list;
+    for (var i = 0; i < tracklist.length; i++) {
+    // console.log(tracklist[i].track.track_name);
+        var tracknames = tracklist[i].track.track_name;
+            // console.log(tracknames);
+            document.getElementById("results").innerHTML = tracknames;
+    }
+});
 });
 
