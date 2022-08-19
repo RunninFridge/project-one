@@ -27,6 +27,7 @@ h1 {
 }  
 
 .button-styles {
+<<<<<<< HEAD
     margin: 15px 20px 10px 20px;
     font-size: 40px;
    
@@ -100,6 +101,9 @@ h1 {
     margin-right: 7px;
     border: solid;
     border-width: 3px;
+=======
+    size: 20px;
+>>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
 }
 
 .button.primary.mystyles:hover {
@@ -127,7 +131,7 @@ p.bio {
     display: flex;
 }
 
-.searchBar {
+.search-bar {
     width: 20%;
     border: black;
     border: solid;
@@ -137,7 +141,7 @@ p.bio {
     margin-bottom: 8%;
 }
 
-#searchBtn {
+#search-btn {
     background-color: darkred;
     font-size: 18px;
     border-radius: 5%;
@@ -155,8 +159,12 @@ p.bio {
     margin-bottom: 8%;
 }
 
+<<<<<<< HEAD
 #searchBtn:hover {
 >>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
+=======
+#search-btn:hover {
+>>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
     opacity: 0.7;
 }   
     
@@ -182,10 +190,14 @@ p.details {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .search-results {
 =======
 .searchResults {
 >>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
+=======
+.search-results {
+>>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
     font-size: 22px;
     margin-left: 10%;
     color: white;
@@ -204,5 +216,9 @@ p.details {
     margin-top: 5%;  
 =======
     margin-bottom: 2%;
+<<<<<<< HEAD
 >>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
 }
+=======
+}
+>>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
