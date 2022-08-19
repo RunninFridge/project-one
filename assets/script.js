@@ -23,8 +23,16 @@ $('#search-btn').on('click', function(event){
     $.getJSON(`https://api.musixmatch.com/ws/1.1/track.search?format=jsonp&callback=callback&q_lyrics=${lyric}&apikey=8c6ba3b63ecfe089c69bf57ce2429746&callback=?`
 , function(data) {  
     console.log(data);
-    const tracks = data.message.body.track_list.q_track;
-    console.log(tracks)
+    console.log(data.message.body.track_list[0].track.track_name);
+    console.log(data.message.body.track_list[1].track.track_name);
+    console.log(data.message.body.track_list[2].track.track_name);
+    console.log(data.message.body.track_list[3].track.track_name);
+    console.log(data.message.body.track_list[4].track.track_name);
+    console.log(data.message.body.track_list[5].track.track_name);
+    console.log(data.message.body.track_list[6].track.track_name);
+    console.log(data.message.body.track_list[7].track.track_name);
+    console.log(data.message.body.track_list[8].track.track_name);
+    console.log(data.message.body.track_list[9].track.track_name);
     });
 });
 
