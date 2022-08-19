@@ -24,7 +24,7 @@ $('#search-btn').on('click', function(event){
 , function(data) {  
     console.log(data);
 
-    var tracklist = data.message.body.track_list
+    var tracklist = data.message.body.track_list;
         for (var i = 0; i < tracklist.length; i++) {
         console.log(tracklist[i].track.track_name)
 }
