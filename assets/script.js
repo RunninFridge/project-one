@@ -1,5 +1,5 @@
 var youTubeBtn = document.getElementById("youTube-btn");
-var appleMusicBtn = document.getElementById("appleMusic-btn");
+var appleMusicBtn = document.getElementById("apple-music-btn");
 var spotifyBtn = document.getElementById("spotify-btn");
 
 
