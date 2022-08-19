@@ -14,19 +14,16 @@
     <section class="header">
         <nav>
             <h1>Music Search Engine</h1>
-            <button class="button primary mystyles" id="youtube-btn" type="button" href="https://www.youtube.com/">YouTube</button>
-            <iconify-icon icon="logos:youtube"></iconify-icon>
-            <button class="button primary mystyles" id="apple-music-btn" type="button"href="https://music.apple.com/us/browse">Apple Music</button>
-            <iconify-icon icon="cib:apple-music"></iconify-icon>
-            <button class="button primary mystyles" id="spotify-btn" type="button" href="https://open.spotify.com/">Spotify</button>
-            <iconify-icon icon="logos:spotify-icon"></iconify-icon>
-           
+            <button><iconify-icon icon="logos:youtube" class="button-styles" id="youtube-btn" type="button" href="https://www.youtube.com/"></iconify-icon></iconify-icon></button>
+            <button><iconify-icon icon="cib:apple-music" class="button-styles" id="apple-music-btn" type="button"href="https://music.apple.com/us/browse"></iconify-icon></iconify-icon></button>
+            <button><iconify-icon icon="logos:spotify-icon" class="button-styles" id="spotify-btn" type="button" href="https://open.spotify.com/"></iconify-icon></button>
+            
         </nav>
     </section> 
-    <p class= "bio">Search for any song lyric and get the song title in return.</p>   
+    <p class= "bio">Search for a string of song lyrics and get song titles in return.</p>   
     <section>
         <div class ="container">
-            <input id="search-field" type="text" class="search-bar" placeholder="Search..." >
+            <input type="text" id="search-field" class="search-bar" placeholder="Search..." >
             <button class="button primary" id="search-btn" type="button">Search</button>
         </div>   
         <div class="card" style="width: 33%;">
@@ -34,15 +31,15 @@
               Search Results
             </div>
             <div class="card-section">
-                <p class="details">You can find your music library below:</p>
+                <p class="details">You can find your song results here. Just click your preferred streaming service at the top right of this page to find your song and begin listening.</p>
               <!-- List items append local storage items from search bar SN--> 
-            <ol class="search-results" id="results"> 
+            <ol class="search-results" id="results">      
             </ol>
             </div>
     </section>    
 
     <section class="footer">  
-    <hr id="endBreak">
+    <hr>
         &copy; UW Coding Bootcamp Project 1: Alfredo Rodriguez | Vadim Merenovskiy | Stephen Novelli | 2022
     </section>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
