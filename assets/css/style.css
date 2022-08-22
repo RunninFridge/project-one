@@ -59,9 +59,10 @@ p.bio {
 
 .search-bar {
     width: 20%;
-    border: black;
+    border-color: darkred;
     border: solid;
     border-width: 3px;
+    border-radius: 5%;
     margin-left: 1%;
     margin-top: .8%;
 }
@@ -83,6 +84,8 @@ p.bio {
     
 .card {
     margin-left: 1%;
+    border-width: 3px;
+    border-radius: 5%;
 }
 
 .card-divider {
@@ -114,4 +117,12 @@ p.details {
     width: 100%;
     text-align: center;
     margin-top: 5%;  
+}
+
+a {
+    color: black;
+}
+a:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
