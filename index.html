@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +10,13 @@
     <link rel="StyleSheet" href="./assets/css/style.css"/>
 </head>
 <body>
+    <content>
     <section class="header">
         <nav>
             <h1>Music Search Engine</h1>
             <button><iconify-icon icon="logos:youtube" class="button-styles" id="youtube-btn" type="button" href="https://www.youtube.com/"></iconify-icon></iconify-icon></button>
             <button><iconify-icon icon="cib:apple-music" class="button-styles" id="apple-music-btn" type="button"href="https://music.apple.com/us/browse"></iconify-icon></iconify-icon></button>
-            <button><iconify-icon icon="logos:spotify-icon" class="button-styles" id="spotify-btn" type="button" href="https://open.spotify.com/"></iconify-icon></button>
-            
+            <button><iconify-icon icon="logos:spotify-icon" class="button-styles" id="spotify-btn" type="button" href="https://open.spotify.com/"></iconify-icon></button> 
         </nav>
     </section> 
     <p class= "bio">Search for a string of song lyrics and get song titles in return.</p>   
@@ -33,21 +32,16 @@
             <div class="card-section">
                 <p class="details">You can find your song results here. Just click your preferred streaming service at the top right of this page to find your song and begin listening.</p>
               <!-- List items append local storage items from search bar SN--> 
-            <ol class="search-results">      
-                <li>"Search 1"</li>
-                <li>"Search 2"</li>
-                <li>"Search 3"</li>
-                <li>"Search 4"</li>
-                <li>"Search 5"</li>    
-            </ol>
+            <ol class="search-results"></ol>
             </div>
     </section>    
-
     <section class="footer">  
     <hr>
         &copy; UW Coding Bootcamp Project 1:<a href="https://github.com/AlfredRodr"  target="_blank"> Alfredo Rodriguez</a> | <a href="https://github.com/RunninFridge"  target="_blank">Vadim Merenovskiy</a> | <a href="https://github.com/snovelli1021"  target="_blank">Stephen Novelli</a> | 2022
     </section>
     <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    </content>
 </body>
 </html>
