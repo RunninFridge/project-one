@@ -8,11 +8,9 @@ var spotifyBtn = document.getElementById("spotify-btn");
 youTubeBtn.onclick = function() {
     window.open('https://youtube.com/');
 };
-
 appleMusicBtn.onclick = function() {
     window.open('https://music.apple.com/us/browse/');
 };
-
 spotifyBtn.onclick = function() {
     window.open('https://open.spotify.com/');
 };
@@ -32,3 +30,4 @@ $('#search-btn').on('click', function(event){
     console.log(tracks)
     });
 });
+}
