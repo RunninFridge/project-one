@@ -4,6 +4,9 @@
     font-size: 18px;
     box-sizing: border-box;
 }
+p {
+    font-family: "cairo"
+   }
 
 .header {
     display: flex;
