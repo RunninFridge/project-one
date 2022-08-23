@@ -134,3 +134,27 @@ a:hover {
 a:visited {
     color: black;
 }
+
+@media screen and(max-width: 1200px) {
+    .content {
+        width: 100%
+    }
+}
+
+@media screen and(max-width: 1024px) {
+    .content {
+        width: 100%
+    }
+}
+
+@media screen and(max-width: 820px) {
+    .content {
+        width: 100%
+    }
+}
+
+@media screen and(max-width: 480px) {
+    .content {
+        width: 100%
+    }
+}
