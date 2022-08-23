@@ -2,10 +2,6 @@
     font-family: sans-serif;
     font-size: 40px;
     font-size: 18px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
     box-sizing: border-box;
 }
 
@@ -30,15 +26,10 @@ h1 {
 }  
 
 .button-styles {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
     margin: 15px 20px 10px 20px;
     font-size: 40px;
    
 } 
-<<<<<<< HEAD
 
 .button-styles:hover {
     opacity: 0.7;
@@ -65,29 +56,6 @@ p.bio {
 .container {
     display: flex;
 }
-=======
-}
-
-.header {
-    display: flex;
-    width: 100%;
-}
-
-nav {
-    width: 100%;
-    float: right;
-    text-align: right;
-    margin-top: 1%;
-}
-
-h1 {
-    color: darkred;
-    margin-left: 1%;
-    font-size: 66px;
-    font-family: monospace;
-    float: left;
-}  
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
 
 .search-bar {
     width: 20%;
@@ -102,18 +70,7 @@ h1 {
     background-color: darkred;
     font-size: 18px;
     border-radius: 5%;
-<<<<<<< HEAD
-=======
-    float: right;
-    margin-right: 7px;
-    border: solid;
-    border-width: 3px;
-=======
-    size: 20px;
->>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
 }
-=======
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
 
 .button-styles:hover {
     opacity: 0.7;
@@ -143,8 +100,8 @@ p.bio {
 
 .search-bar {
     width: 20%;
-    border-color: darkred;
     border: solid;
+    border-color: darkred;
     border-width: 3px;
     border-radius: 5%;
     margin-left: 1%;
@@ -155,29 +112,18 @@ p.bio {
     background-color: darkred;
     font-size: 18px;
     border-radius: 5%;
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
     margin-left: 1%;
     border: solid;
     border-width: 3px;  
     margin-top: .4%;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
     margin-bottom: 4%;
 }
 
 #search-btn:hover {
-=======
     margin-bottom: 8%;
 }
 
-<<<<<<< HEAD
-#searchBtn:hover {
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
-=======
 #search-btn:hover {
->>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
     opacity: 0.7;
 }   
     
@@ -204,54 +150,30 @@ p.details {
     font-style: italic;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 .search-results {
-=======
-.searchResults {
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
-=======
-.search-results {
->>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
     font-size: 22px;
     margin-left: 10%;
     color: white;
 }
 
 .footer {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    position: fixed;
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
-=======
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
     left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-top: 5%;  
-=======
     margin-bottom: 2%;
-<<<<<<< HEAD
->>>>>>> 55fd06f (Styled page. Set classes for HTML Elements added background image, added new iconify library for clickable buttons.)
-=======
-    margin-top: 5%;  
->>>>>>> 65bd263 (Updated the buttons for streaming services and fixed some on page styling)
 }
-<<<<<<< HEAD:assets/style.css
-=======
-}
->>>>>>> cb93051 (Made changes to HTML id and class names, added JavaScript to return song lyrics)
-=======
 
 a {
     color: black;
 }
+
 a:hover {
     opacity: 0.7;
     cursor: pointer;
 }
->>>>>>> a17b67b (Updating README, linked our Githubs to our names in the footer, added CSS classes for footer links, updated alt text for favicon.):assets/css/style.css
+
+a:visited {
+    color: black;
+}
