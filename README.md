@@ -10,5 +10,6 @@ Github Repository Link:
 https://github.com/RunninFridge/project-one
 
 Github Pages Link:
+https://runninfridge.github.io/project-one/
 
 ![my screenshot](./assets/screenshot.jpg)
